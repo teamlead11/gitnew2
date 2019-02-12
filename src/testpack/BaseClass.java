@@ -8,7 +8,7 @@ public class BaseClass {
 	}
 
 	public static void baseclassMethods() {
-		System.out.println("modified logic");
+		System.out.println("2nd modified logic");
 	}
 
 }
