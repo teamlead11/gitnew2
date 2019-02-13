@@ -36,9 +36,7 @@ public class BaseClass {
 		System.out.println(a + b);
 	}
 
-	public void add(String a, String b, String c) {
-		System.out.println(a + b + c);
-	}
+	
 	
 	public void addOne(int a, int b, int c) {
 		System.out.println(a*b*c);
