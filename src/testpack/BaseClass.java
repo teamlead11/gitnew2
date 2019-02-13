@@ -1,5 +1,11 @@
 package testpack;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 public class BaseClass {
 
 	public static void main(String[] args) {
@@ -9,6 +15,9 @@ public class BaseClass {
 		base.add(4, 5);
 		base.add(1, 2, 3);
 base.cal(2, 3, 4, 5);
+
+		base.sortAnArrayByShahul();
+
 	}
 
 	public static void baseclassMethods() {
@@ -31,9 +40,29 @@ base.cal(2, 3, 4, 5);
 	public void add(String a, String b, String c) {
 		System.out.println(a + b + c);
 	}
+
 	public void cal(int a,int b,int c,int d)
 	{
 		System.out.println(a+b+c+d);
 	}
+
+	
+	public void sortAnArrayByShahul() {
+		List<Integer> a= new ArrayList<Integer>();
+		a.add(5);
+		a.add(6);
+		a.add(1);
+		a.add(4);
+		System.out.println("Before sort");
+		for (Object li : a) {
+			System.out.println(li);
+		}
+		Collections.sort(a);
+		System.out.println("After sort");
+		for (Integer ali : a) {
+			System.out.println(ali);
+		}
+		
+		}
 }
 
