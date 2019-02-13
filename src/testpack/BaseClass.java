@@ -17,6 +17,7 @@ public class BaseClass {
 		base.addOne("xyz");
 		base.sortIntArrByRamya();
 		base.sortIntArrByJalal();
+		base.sortCharArrayDhivagar();
 	}
 
 	public static void baseclassMethods() {
@@ -75,6 +76,7 @@ public class BaseClass {
 			System.out.println(arr[i]);
 		}
 	}
+
 	public void sortIntArrByJalal() {
 		int[] sortdata = {6,5,4,3,2,1};
 		System.out.println("Data before sort");
@@ -90,6 +92,19 @@ public class BaseClass {
 		
 	}
 
+
+	public void sortCharArrayDhivagar() {
+		char[] name = { 'd', 'h', 'i', 'v', 'a', 'g', 'a', 'r'};
+		System.out.println("BEFORE NAME SORT");
+		for(int i=0; i<name.length;i++) {
+			System.out.println(name[i]);
+		}
+		Arrays.sort(name);
+		System.out.println("AFTER NAME SORT");
+		for (int i = 0; i < name.length; i++) {
+			System.out.println(name[i]);
+	}
 }
 
+}
 
