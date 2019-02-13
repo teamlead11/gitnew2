@@ -10,20 +10,21 @@ public class BaseClass {
 		// TODO Auto-generated method stub
 		baseclassMethods();
 		BaseClass base = new BaseClass();
+		base.addOne(2, 3, 6);
 		base.add(4, 5);
 		base.add(1, 2, 3);
-		base.addOne(2, 3, 6);
 		base.sortArrayYuvaraj();
 		
 		
 	}
 
+	
+    public void add(int a, int b) {
+		System.out.println(a + b);
+	}
+	
 	public static void baseclassMethods() {
 		System.out.println("Dhivagar modified logic");
-	}
-
-	public void add(int a, int b) {
-		System.out.println(a + b);
 	}
 
 	public void add(int a, int b, int c) {
