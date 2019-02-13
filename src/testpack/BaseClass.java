@@ -15,6 +15,7 @@ public class BaseClass {
 		base.add(4, 5);
 		base.add(1, 2, 3);
 		base.sortAnArrayByShahul();
+		base.addOne("xyz");
 	}
 
 	public static void baseclassMethods() {
@@ -38,6 +39,11 @@ public class BaseClass {
 		System.out.println(a + b + c);
 	}
 	
+	public void addOne(String a) {
+		System.out.println(a);
+	}	
+	
+	
 	public void sortAnArrayByShahul() {
 		List<Integer> a= new ArrayList<Integer>();
 		a.add(5);
@@ -56,3 +62,5 @@ public class BaseClass {
 		
 		}
 }
+
+
