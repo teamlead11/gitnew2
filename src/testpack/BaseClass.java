@@ -18,6 +18,7 @@ public class BaseClass {
 		base.sortIntArrByRamya();
 		base.sortIntArrByJalal();
 		base.sortCharArrayDhivagar();
+		base.sortIntArrayByNaren();
 	}
 
 	public static void baseclassMethods() {
@@ -105,6 +106,20 @@ public class BaseClass {
 			System.out.println(name[i]);
 	}
 }
+	public void sortIntArrayByNaren() {
+		int[] sort = {4,5,3,1,6,2};
+		System.out.println("before sort");
+		for(int i=0;i<sort.length;i++) {
+			System.out.println(sort[i]);
+		}
+		Arrays.sort(sort);
+		System.out.println("after sort");
+		for(int i=0;i<sort.length;i++) {
+			System.out.println(sort[i]);
+		}
+
+		
+	}
 
 }
 
