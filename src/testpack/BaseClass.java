@@ -7,6 +7,8 @@ public class BaseClass {
 		baseclassMethods();
 		BaseClass base = new BaseClass();
 		base.add(4, 5);
+		base.add(1, 2, 3);
+
 	}
 
 	public static void baseclassMethods() {
@@ -15,5 +17,10 @@ public class BaseClass {
 
 	public void add(int a, int b) {
 		System.out.println(a + b);
+	}
+
+	public void add(int a, int b, int c) {
+		System.out.println(a + b + c);
+
 	}
 }
