@@ -27,4 +27,8 @@ public class BaseClass {
 	public void add(String a, String b) {
 		System.out.println(a + b);
 	}
+
+	public void add(String a, String b, String c) {
+		System.out.println(a + b + c);
+	}
 }
