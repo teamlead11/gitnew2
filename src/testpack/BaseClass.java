@@ -1,8 +1,7 @@
 package testpack;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -16,6 +15,7 @@ public class BaseClass {
 		base.add(1, 2, 3);
 		base.sortAnArrayByShahul();
 		base.addOne("xyz");
+		base.sortIntArrByRamya();
 	}
 
 	public static void baseclassMethods() {
@@ -61,6 +61,19 @@ public class BaseClass {
 		}
 		
 		}
+	
+	public void sortIntArrByRamya() {
+		int[] arr= {3,11,6,2,1,15};
+		System.out.println("Integer array before sorting");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		Arrays.sort(arr);
+		System.out.println("After sorting");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
 }
 
 
