@@ -23,4 +23,8 @@ public class BaseClass {
 		System.out.println(a + b + c);
 
 	}
+
+	public void add(String a, String b) {
+		System.out.println(a + b);
+	}
 }
