@@ -14,7 +14,7 @@ public class BaseClass {
 		BaseClass base = new BaseClass();
 		base.add(4, 5);
 		base.add(1, 2, 3);
-base.cal(2, 3, 4, 5);
+        base.cal(2, 3, 4, 5);
 
 		base.sortAnArrayByShahul();
 
