@@ -13,6 +13,9 @@ public class Student {
 		System.out.println("Enter Name");
 		String name= sc.next();
 		System.out.println("Student Name:"+name);
+		System.out.println("Enter last Name");
+		String lastname= sc.next();
+		System.out.println("Student Name:"+lastname);
 
 	}
 
