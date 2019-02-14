@@ -129,6 +129,21 @@ public class BaseClass {
 
 		
 	}
+
+	public void sortArraySowji() {
+		List<Integer> li= new ArrayList<Integer>();
+		li.add(6);
+		li.add(9);
+		li.add(10);
+		li.add(4);
+		System.out.println(" sort");
+		for (Object o : li) {
+			System.out.println(o);
+		
+
+	}
+	}
+
 	public void sortIntArrayByYuvaraj() {
 		int[] sort = {4,5,3,1,6,2};
 		System.out.println("before sort");
