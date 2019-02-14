@@ -14,7 +14,10 @@ public class BaseClass {
 		base.add(4, 5);
 		base.add(1, 2, 3);
         base.cal(2, 3, 4, 5);
+
+        base.display();
         base.sortIntArrayByYuvaraj();
+
 		base.sortAnArrayByShahul();
 		base.addOne("xyz");
 		base.sortIntArrByRamya();
@@ -126,9 +129,12 @@ public class BaseClass {
 		for(int i=0;i<sort.length;i++) {
 			System.out.println(sort[i]);
 		}
-
-		
 	}
+
+public void display()
+{
+	System.out.println("sorting");
+}
 
 	public void sortArraySowji() {
 		List<Integer> li= new ArrayList<Integer>();
@@ -159,4 +165,7 @@ public class BaseClass {
 		
 	}
 }
+
+
+
 
