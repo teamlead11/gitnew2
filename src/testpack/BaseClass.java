@@ -14,13 +14,14 @@ public class BaseClass {
 		base.add(4, 5);
 		base.add(1, 2, 3);
         base.cal(2, 3, 4, 5);
-
+        base.sortIntArrayByYuvaraj();
 		base.sortAnArrayByShahul();
 		base.addOne("xyz");
 		base.sortIntArrByRamya();
 		base.sortIntArrByJalal();
 		base.sortCharArrayDhivagar();
 		base.sortIntArrayByNaren();
+		
 	}
 
 	public static void baseclassMethods() {
@@ -128,6 +129,19 @@ public class BaseClass {
 
 		
 	}
-
+	public void sortIntArrayByYuvaraj() {
+		int[] sort = {4,5,3,1,6,2};
+		System.out.println("before sort");
+		for(int i=0;i<sort.length;i++) {
+			System.out.println(sort[i]);
+		}
+		Arrays.sort(sort);
+		System.out.println("after sort");
+		for(int i=0;i<sort.length;i++) {
+			System.out.println(sort[i]);
+		}
+	
+		
+	}
 }
 
