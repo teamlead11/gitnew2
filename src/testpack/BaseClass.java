@@ -14,14 +14,14 @@ public class BaseClass {
 		base.add(4, 5);
 		base.add(1, 2, 3);
         base.cal(2, 3, 4, 5);
-        
+        base.sortIntArrayByYuvaraj();
 		base.sortAnArrayByShahul();
 		base.addOne("xyz");
 		base.sortIntArrByRamya();
 		base.sortIntArrByJalal();
 		base.sortCharArrayDhivagar();
 		base.sortIntArrayByNaren();
-		base.sortIntArrayByYuvaraj();
+		
 	}
 
 	public static void baseclassMethods() {
