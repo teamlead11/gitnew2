@@ -1,8 +1,7 @@
 package testpack;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,7 +16,11 @@ public class BaseClass {
         base.cal(2, 3, 4, 5);
 
 		base.sortAnArrayByShahul();
-
+		base.addOne("xyz");
+		base.sortIntArrByRamya();
+		base.sortIntArrByJalal();
+		base.sortCharArrayDhivagar();
+		base.sortIntArrayByNaren();
 	}
 
 	public static void baseclassMethods() {
@@ -47,6 +50,11 @@ public class BaseClass {
 	}
 
 	
+	public void addOne(String a) {
+		System.out.println(a);
+	}	
+	
+	
 	public void sortAnArrayByShahul() {
 		List<Integer> a= new ArrayList<Integer>();
 		a.add(5);
@@ -64,5 +72,62 @@ public class BaseClass {
 		}
 		
 		}
+	
+	public void sortIntArrByRamya() {
+		int[] arr= {3,11,6,2,1,15};
+		System.out.println("Integer array before sorting");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		Arrays.sort(arr);
+		System.out.println("After sorting");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	public void sortIntArrByJalal() {
+		int[] sortdata = {6,5,4,3,2,1};
+		System.out.println("Data before sort");
+		for(int i=0;i<sortdata.length;i++) {
+			System.out.println(sortdata[i]);
+		}
+		Arrays.sort(sortdata);
+		System.out.println("Data after sort");
+		for(int i=0;i<sortdata.length;i++) {
+			System.out.println(sortdata[i]);
+		}
+
+		
+	}
+
+
+	public void sortCharArrayDhivagar() {
+		char[] name = { 'd', 'h', 'i', 'v', 'a', 'g', 'a', 'r'};
+		System.out.println("BEFORE NAME SORT");
+		for(int i=0; i<name.length;i++) {
+			System.out.println(name[i]);
+		}
+		Arrays.sort(name);
+		System.out.println("AFTER NAME SORT");
+		for (int i = 0; i < name.length; i++) {
+			System.out.println(name[i]);
+	}
+}
+	public void sortIntArrayByNaren() {
+		int[] sort = {4,5,3,1,6,2};
+		System.out.println("before sort");
+		for(int i=0;i<sort.length;i++) {
+			System.out.println(sort[i]);
+		}
+		Arrays.sort(sort);
+		System.out.println("after sort");
+		for(int i=0;i<sort.length;i++) {
+			System.out.println(sort[i]);
+		}
+
+		
+	}
+
 }
 

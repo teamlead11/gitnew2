@@ -6,7 +6,7 @@ public class Student {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
-		System.out.println("Enter a roll number");
+		System.out.println("Enter  roll number");
 		int rollNo= sc.nextInt();
 		System.out.println("Student roll no:"+rollNo);
 
