@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class BaseClass {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		baseclassMethods();
@@ -17,16 +17,18 @@ public class BaseClass {
 
         base.display();
         base.sortIntArrayByYuvaraj();
-
+        base.sortIntArrByJalal();
+		base.sortCharArrayDhivagar();
+		base.sortIntArrayByNaren();
 		base.sortAnArrayByShahul();
 		base.addOne("xyz");
 		base.sortIntArrByRamya();
-		base.sortIntArrByJalal();
-		base.sortCharArrayDhivagar();
-		base.sortIntArrayByNaren();
-		
+		base.basic();
 	}
-
+	public void basic() {
+		System.out.println("Hello");
+		
+		}
 	public static void baseclassMethods() {
 		System.out.println("Dhivagar modified logic");
 	}
@@ -56,6 +58,7 @@ public class BaseClass {
 	
 	public void addOne(String a) {
 		System.out.println(a);
+	
 	}	
 	
 	
