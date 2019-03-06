@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class BaseClass {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		baseclassMethods();
@@ -14,16 +14,21 @@ public class BaseClass {
 		base.add(4, 5);
 		base.add(1, 2, 3);
         base.cal(2, 3, 4, 5);
+
+        base.display();
         base.sortIntArrayByYuvaraj();
+        base.sortIntArrByJalal();
+		base.sortCharArrayDhivagar();
+		base.sortIntArrayByNaren();
 		base.sortAnArrayByShahul();
 		base.addOne("xyz");
 		base.sortIntArrByRamya();
-		base.sortIntArrByJalal();
-		base.sortCharArrayDhivagar();
-		base.sortIntArrayByNaren();
-		
+		base.basic();
 	}
-
+	public void basic() {
+		System.out.println("Hello");
+		
+		}
 	public static void baseclassMethods() {
 		System.out.println("Dhivagar modified logic");
 	}
@@ -53,6 +58,7 @@ public class BaseClass {
 	
 	public void addOne(String a) {
 		System.out.println(a);
+	
 	}	
 	
 	
@@ -126,9 +132,27 @@ public class BaseClass {
 		for(int i=0;i<sort.length;i++) {
 			System.out.println(sort[i]);
 		}
-
-		
 	}
+
+public void display()
+{
+	System.out.println("sorting");
+}
+
+	public void sortArraySowji() {
+		List<Integer> li= new ArrayList<Integer>();
+		li.add(6);
+		li.add(9);
+		li.add(10);
+		li.add(4);
+		System.out.println(" sort");
+		for (Object o : li) {
+			System.out.println(o);
+		
+
+	}
+	}
+
 	public void sortIntArrayByYuvaraj() {
 		int[] sort = {4,5,3,1,6,2};
 		System.out.println("before sort");
@@ -170,8 +194,5 @@ public class BaseClass {
 		}
 	
 }
-	
-	
-	
 
 }
