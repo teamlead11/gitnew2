@@ -1,17 +1,16 @@
 package org.test;
 
-import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 import java.util.List;
 import java.util.Set;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -41,8 +40,8 @@ public class Sample {
 		
 		File f=new File("C:\\Users\\DELL\\Desktop\\karthi\\Foperation\\driver\\task.xlsx");
 		FileOutputStream f1=new FileOutputStream(f);
-		Workbook wb=new XSSFWorkbook();
-		Sheet sheet = wb.createSheet("flipTask");
+		XSSFWorkbook wb=new XSSFWorkbook();
+		XSSFSheet sheet = wb.createSheet("flipTask");
 		
 		
 		Thread.sleep(3000);
@@ -54,8 +53,8 @@ public class Sample {
 			//System.out.println("in");
 			//System.out.println(name);
 			
-			Row row = sheet.createRow(i);
-			Cell cell = row.createCell(0);
+			XSSFRow row = sheet.createRow(i);
+			XSSFCell cell = row.createCell(0);
 			cell.setCellValue(name);
 			
 		}
@@ -78,7 +77,7 @@ public class Sample {
 			
 		}
 		FileInputStream f2=new FileInputStream(f);
-		Cell cell1 = sheet.getRow(4).getCell(0);
+		XSSFCell cell1 = sheet.getRow(4).getCell(0);
 		String excelValue = cell1.getStringCellValue();
 		
 		System.out.println("value from excel :"+excelValue);
